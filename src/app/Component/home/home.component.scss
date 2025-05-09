@@ -6,9 +6,9 @@
 .hero {
   background-color: #0d1117;
   color: white;
-  // padding: 0.2rem;
+  padding: 0.2rem;
   font-family: 'Segoe UI', sans-serif;
-  min-height: 78vh;
+  min-height: 83vh;
 }
 
 .navbar {
@@ -111,4 +111,28 @@ li a {
   height: 100%;
   object-fit: cover;
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+}
+// .profile-img {
+//   animation: float 3s ease-in-out infinite;
+// }
+
+// @keyframes float {
+//   0%, 100% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-10px);
+//   }
+// }
+
+h1{
+  width: 50ch;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20) infinite alternate-reverse;
+}
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
 }
