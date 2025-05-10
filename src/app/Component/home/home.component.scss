@@ -46,6 +46,27 @@ li a {
   cursor: pointer;
 }
 
+.nav-links li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -91,6 +112,20 @@ li a {
   border-radius: 5px;
 }
 
+.download-btn:hover {
+  transform: scale(1.05);
+  background-color: #28e98c;
+  color: #0d1117;
+  transition: all 0.3s ease;
+}
+
+.hexagon-frame:hover {
+  transform: scale(1.05);
+  background-color: #28e98c;
+  color: #0d1117;
+  transition: all 0.3s ease;
+}
+
 .image-area {
   margin-top: 1rem;
 }
@@ -117,22 +152,22 @@ li a {
 // }
 
 // @keyframes float {
-//   0%, 100% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-10px);
-//   }
+//   0%, 100% { transform: translateY(0); }
+//   50% { transform: translateY(-10px); }
 // }
+
 
 h1{
   width: 50ch;
   text-wrap: nowrap;
   overflow: hidden;
+  border-right: 2px solid #28e98c;
   animation: typing 2s steps(20) infinite alternate-reverse;
 }
 @keyframes typing {
-  from {
-    width: 0ch;
-  }
+  from { width: 0 }
+  to { width: 15ch }
+}
+@keyframes blink {
+  50% { border-color: transparent }
 }
