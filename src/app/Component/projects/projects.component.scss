@@ -134,7 +134,9 @@
   .nav-links li a:hover::after {
     width: 100%;
   }
-  
+  .nav-links li a.active {
+  color: #000000 !important;
+}
 // .container{
 //   display: flex;
 //   width: 820px;

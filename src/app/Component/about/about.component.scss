@@ -39,7 +39,9 @@
     width: 100%;
   }
   
-  
+  .nav-links li a.active {
+  color: #000000 !important;
+}
   .navbar {
     display: flex;
     justify-content: space-between;

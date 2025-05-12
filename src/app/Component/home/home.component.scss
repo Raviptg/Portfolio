@@ -30,6 +30,10 @@ li a {
   li a:hover {
     color: #090909; /* Optional hover effect */
   }
+
+  .nav-links li a.active {
+  color: #000000 !important;
+}
   
 .logo {
   font-size: 1.8rem;
