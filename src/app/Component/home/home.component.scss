@@ -203,7 +203,8 @@ h1{
 }
 .project-grid {
     display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
     justify-content: space-evenly;
