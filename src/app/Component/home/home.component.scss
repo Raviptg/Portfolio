@@ -6,22 +6,17 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  // background-color: #0d1117;
   color: white;
 }
 
-/* Container */
 .container {
   width: 100%;
-  // padding: 0 20px;
 }
 .container {
   max-width: auto;
   margin: 0 auto;
-  // padding: 0 20px;
 }
 .hero {
-  // background-color: #0d1117;
   color: white;
   padding: 0.2rem;
   font-family: 'Segoe UI', sans-serif;
@@ -102,10 +97,6 @@ li a {
   margin: 5rem 5rem 5rem 5rem;
 }
 
-// .text-area {
-//   max-width: 700px;
-// }
-
 .text-area {
   flex: 1 1 60%;
 }
@@ -177,15 +168,6 @@ li a {
   object-fit: cover;
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
 }
-// .profile-img {
-//   animation: float 3s ease-in-out infinite;
-// }
-
-// @keyframes float {
-//   0%, 100% { transform: translateY(0); }
-//   50% { transform: translateY(-10px); }
-// }
-
 
 h1{
   width: 50ch;
@@ -203,7 +185,6 @@ h1{
 }
 .project-grid {
     display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
@@ -257,3 +238,12 @@ h1{
     align-items: center;
     margin: 2rem 2rem 2rem 2rem;
   }
+
+@media (max-width: 767px) {
+  .project-grid.projects {
+    grid-template-columns: 1fr;
+  }
+  .project-grid.skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
